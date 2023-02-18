@@ -19,6 +19,9 @@
 		&:last-child
 			padding: 0
 
+.header-small
+	display: none
+
 .section-first
 	background: url("../img/IMAGE (1).png") no-repeat	
 	background-size: cover
@@ -133,6 +136,7 @@
 		&__contact
 			display: flex
 			align-items: center
+			padding-bottom: 50px
 			&__call
 				display: flex
 				justify-content: center
@@ -434,3 +438,145 @@
 		color: #4D5053
 	span
 		color: #cda274
+
+.visible
+	display: block
+
+@media ( max-width: 1280px)
+	.section-second
+		&__services
+			margin: 100px 0
+			&__item
+				&__text
+					font-size: 20px
+					height: 120px
+					padding-bottom: 20px
+	.section-third
+		&__advice
+			width: 370px
+			&__title
+				font-size: 48px
+				padding-bottom: 32px
+			&__text
+				padding-bottom: 30px
+			// &__contact
+											
+	.section-fourth
+		width: 95%
+		padding-top: 90px
+		&__about
+			&__item
+				width: 300px
+	.section-fifth 
+		margin: 100px auto 0
+	.section-sixth
+		&__choices
+			&__choice
+				&__img
+					width: 450px
+	.section-seventh
+		padding: 140px 0
+	.section-eighth
+		margin-top: 110px										
+	.section-ninth
+		width: 95%	
+	.section-tenth
+		padding-left: 10px
+		&__block
+			&:first-child
+				padding-right: 30px		
+		
+
+@media (max-width: 991px)
+	.header
+		margin: 0 15px
+	.section-first
+		&__block
+			margin: 0 auto
+	.section-second
+		&__services
+			flex-wrap: wrap
+			margin-top: 80px
+			&__item
+				padding-bottom: 30px
+				width: 390px
+				&__text
+					margin: auto
+	.section-third
+		flex-direction: column-reverse
+		align-items: center
+	.section-fourth
+		&__about
+			flex-direction: column
+			align-items: center					
+			&__item
+				margin-bottom: 15px
+	.section-sixth
+		&__text
+			width: 95%		
+	.section-seventh
+		&__block 	
+			width: 190px		
+	.section-eighth
+		&__blogs
+			flex-wrap: wrap
+			&__item
+				width: 363px
+	.section-tenth
+		flex-direction: column
+		&__block
+			&:first-child
+				padding-bottom: 15px
+			&__info
+				display: none
+			.accordion
+				&:after
+					content: ">"
+					font-weight: 600
+					margin-left: 15px			
+					
+
+@media (max-width: 767px)
+	.header
+		display: none
+	.header-small
+		display: block	
+	.section-first
+		&__block
+			width: 95%
+	.section-third
+		img
+			width: 95%
+	.section-fourth
+		&__title
+			width: 95%		
+	.section-fifth
+		&__brands
+			flex-direction: column
+			&__brand
+				margin-bottom: 30px	
+	.section-sixth
+		&__choices
+			&__choice
+				width: 95%
+				&__img
+					width: 95%			
+	.section-eighth
+		&__text	
+			width: 95%	
+		&__blogs
+			&__item
+				margin-right: 0	
+	.visible
+		display: block						
+
+
+@media (max-width: 575px)
+	.section-seventh
+		flex-direction: column
+		align-items: center
+		&__block
+			border-right: none
+			border-bottom: 1px solid #CDA274
+			&:last-child
+				border-bottom: none						
